@@ -3,7 +3,7 @@
 
 /* *{
     margin: auto;
-    padding: 0;
+    
 } */
 .inter-uniquifier {
   font-family: "Inter", sans-serif;
@@ -38,7 +38,7 @@
     border: none;
 }
 
-.navbar,.banner,.habits-container,.habits-img, .run-container{
+.navbar,.banner,.habits-container,.habits-img, .run-container, .team-container{
     max-width: 1440px;
     margin: 0 auto;
   
@@ -47,6 +47,8 @@
 .navbar{
     justify-content: space-between;
     align-items: center;
+    padding: 0px 0px 0px 0px;
+
     
 }
 .nav-title{
@@ -245,18 +247,80 @@
 .run-container img{
     max-height: 320px;
     object-fit: none;
-    object-position: 66% 33%;
-
-
-    border-radius: 18px;
+    object-position: 66% 33%; border-radius: 18px;
     margin: 30px 32px 30px 0px;
+}
+/* start the team style */
+.team-container{
+    min-height: 782px;
+    flex-direction: column;
+}
+.team-title{
+    max-width: 671px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center
+}
+.team-title h2{
+    text-align: center;
+    color:rgb(255, 255, 255) ;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: -10px;
+}
+.team-title p{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5) ;
+}
+.team-members{
+    max-width:1040px;
+    margin: 0 auto;
+    border-radius: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 325px);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+    padding: 30px 0px 30px 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+
+
+}
+.team-members{
+    position: relative;
+    
+}
+.team-members img{
+    height: 260px;
+    border-radius: 18px;
+}
+.member1, .member2, .member3, .member4, .member5, .member6{
+    position: relative;
+
+}
+
+.text-overlay{
+    position: absolute;
+    bottom: -10px;
+    padding: 10px;
+
+}
+.text-overlay h3{
+    color: rgb(255, 255, 255) ;
+    margin-bottom: -7px;
+}
+.text-overlay p{
+    color:  rgba(255, 255, 255, 0.5);
 }
 
 /* responsive style */
 @media screen and (max-width:576px) {
     .navbar{
         width: 100%;
-        justify-content:space-around;
+        justify-content:space-between;
+        
     }
     .nav-item{
         display: none;
@@ -264,6 +328,7 @@
     .burger{
         
         display:block;
+        margin-right: 30px;
     }
     .banner, .run-container{
         flex-direction: column;
@@ -296,8 +361,8 @@
     }
     .second-video{
        position: absolute;
-       margin-left:190px;
-       margin-top: -540px;
+       margin-left:180px;
+       margin-top: -560px;
       
      
     }
@@ -306,16 +371,21 @@
     }
 
 
-.habit-item p{
+    .habit-item p{
     width: 50%;
     margin-left: 90px;
     align-items: center;
     justify-content: center;
-}
-.run-container img{
-    width: 95%;
-    object-position: 66% 30%;
-    margin-left: 10px;
-}
+    }
+    .run-container img{
+    height:180px ;
+    width: 80%;
+    object-fit: cover;
+    object-position:70% 20%;
+    margin-left: 38px;
+    }
+    .team-members{
+        grid-template-columns: repeat(1, 325px);
+    }
 
 }
