@@ -255,6 +255,107 @@
     object-position: 66% 33%; border-radius: 18px;
     margin: 30px 32px 30px 0px;
 }
+/* start the bmi calculator style  */
+.bmi-title{
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+    
+}
+.bmi-title h2{
+    color:  rgb(255, 255, 255);
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 0;
+
+    
+
+}
+.bmi-title p{
+    color:rgba(255, 255, 255, 0.5) ;
+    font-size: 0.9rem;
+    
+}
+
+.bmi-content{
+    background-color:rgb(34, 34, 34);
+    margin: 50px 0px 50px 0px ;
+    padding: 30px 0px 30px 0px ;
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border:1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px;
+}
+.bmi-container{
+    max-width: 1040px;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
+.bmi-chart h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 30px;
+
+}
+
+thead{
+    color: rgb(255, 255, 255);
+    font-size: 1rem ;
+    font-weight: 500;
+    text-align: left;
+}
+tbody{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+}
+.bmi-calculator{
+    max-width: 570px;
+}
+.bmi-calculator h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.bmi-calculator p{
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 0.9;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+.form-item{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+
+    
+    
+    
+}
+.form-items{
+    padding: 12px 40px 12px 20px;
+    border-radius: 8px;
+    border:none;
+    background-color:rgba(255, 255, 255, 0.1) ;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 200;
+}
+
+.activity{
+    flex-direction: column;
+    margin-top: 10px;
+}
+.calculate{
+    margin-top: 30px;
+}
+
 /* start the team style */
 .team-container{
     min-height: 782px;
@@ -316,6 +417,7 @@
 .text-overlay p{
     color:  rgba(255, 255, 255, 0.5);
 }
+
 /* start the footer style */
 .footer-container{
     background-color:rgba(255, 255, 255, 0.1) ;
@@ -361,11 +463,13 @@ hr{
     padding: 10px 0;
 }
 
+
 /* responsive style */
 @media screen and (max-width:576px) {
     .navbar{
         width: 100%;
         justify-content:space-between;
+        margin: 10px;
         
     }
     .nav-item{
@@ -374,9 +478,13 @@ hr{
     .burger{
         
         display:block;
-        margin-right: 30px;
+        margin-right: 25px;
     }
-    .banner, .run-container{
+    .banner{
+        flex-direction: column;
+        margin: 10px;
+    }
+     .run-container{
         flex-direction: column;
     }
     .banner-container{
@@ -430,6 +538,23 @@ hr{
     object-position:70% 20%;
     margin-left: 38px;
     }
+    .bmi-title{
+        margin: 10px;
+    }
+    .bmi-container{
+        flex-direction: column;
+        margin: 10px;
+    }
+    .form-item{
+        grid-template-columns: repeat(2,190px);
+        
+    }
+    .activity{
+        width: 390px;
+        
+    }
+
+
     .team-members{
         grid-template-columns: repeat(1, 325px);
     }
@@ -442,6 +567,9 @@ hr{
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 10px;
+    }
+    hr{
+        margin: 10px;
     }
     
 
