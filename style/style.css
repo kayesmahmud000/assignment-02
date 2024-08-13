@@ -330,6 +330,10 @@ tbody{
     font-weight: 400;
     margin-bottom: 30px;
 }
+::placeholder{
+    color:rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+}
 
 
 .form-item{
@@ -347,7 +351,8 @@ tbody{
     border:none;
     background-color:rgba(255, 255, 255, 0.1) ;
     color: rgba(255, 255, 255, 0.6);
-    font-weight: 200;
+    font-weight: 500;
+    
 }
 
 .activity{
@@ -647,9 +652,10 @@ hr{
         margin: 10px;
     }
     .form-item{
-        grid-template-columns: repeat(2,190px);
-        
+        grid-template-columns: repeat(2, 190px);
     }
+
+    
     .activity{
         width: 390px;
         
